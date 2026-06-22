@@ -1,0 +1,10 @@
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        uniq_set = set(nums)
+        result = []
+
+        for i in range(1, len(nums) + 1):
+            if i not in uniq_set:
+                result.append(i)
+
+        return result
